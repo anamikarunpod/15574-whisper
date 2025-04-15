@@ -4,7 +4,6 @@ set -e
 
 CACHE_DIR="/cache"
 MODEL_ID="nyrahealth/CrisperWhisper"
-RUNPOD_SECRET_HF_TOKEN=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
 
 # Check for Hugging Face token
 if [ -z "$RUNPOD_SECRET_HF_TOKEN" ]; then
@@ -13,7 +12,6 @@ if [ -z "$RUNPOD_SECRET_HF_TOKEN" ]; then
     exit 1
 fi
 
-echo "HF Token available with length: ${#RUNPOD_SECRET_HF_TOKEN}"
 
 # Create cache directory
 mkdir -p $CACHE_DIR
