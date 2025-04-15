@@ -27,8 +27,8 @@ RUN chmod +x /builder/download_models.sh
 # Set environment variables
 ENV HF_HOME=/cache 
 
-# RUN echo "Listing root directory:" && ls -la /
-# RUN echo "Listing src directory:" && ls -la /src
+RUN echo "Listing root directory:" && ls -la /
+RUN echo "Listing src directory:" && ls -la src
 
 # Copy source code
 COPY src .
