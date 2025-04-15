@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.1.0+cu121
+torchvision==0.16.0+cu121
+torchaudio==2.1.0+cu121
+pydub
+runpod==1.7.0
+cog
+cryptography<43.0.0
+huggingface-hub
+numpy==1.24.2
+ffmpeg-python
+transformers @ git+https://github.com/nyrahealth/transformers.git@crisper_whisper
+
