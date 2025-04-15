@@ -31,7 +31,10 @@ RUN echo "Listing root directory:" && ls -la /
 RUN echo "Listing src directory:" && ls -la src
 
 # Copy source code
-COPY src .
+COPY src /app
+
+# List contents of /app to verify copy
+RUN echo "Listing /app contents:" && ls -la /app
 
 # Create a startup script that downloads the model then runs the handler
 RUN echo '#!/bin/bash\n\
